@@ -1,6 +1,6 @@
 export const clips = [
-  "https://www.youtube.com/embed/zJ1gotXJjpY",
-  "https://www.youtube.com/embed/TDAyPchpq4s"
+  "FSO2FUEm7f4",
+  "0vUuXvAHlLQ"
 ];
 
 export const songs = [

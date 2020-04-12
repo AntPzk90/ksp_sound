@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="to-market">
-      <a href="#" class="to-market__link" @click.prevent="changePage()">В магазин саундов</a>
+      <a href="#" class="to-market__link" @click.prevent="changePage()">музыка</a>
     </div>
     <full-page ref="fullpage" :options="options" id="fullpage">
       <ul id="menu" ref="menu" class="menu">
