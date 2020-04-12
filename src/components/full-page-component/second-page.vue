@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 class="second-page__title">Some title sound master</h2>
+    <h2 class="second-page__title">sound master</h2>
     <ul class="second-page__list">
       <li class="second-page__item">
         <svg class="icon">

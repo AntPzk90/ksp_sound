@@ -106,6 +106,15 @@ export default {
     if (pageWidth < 768) {
       this.mobileFilterHidden = false;
     }
+     this.$nextTick(function() {
+      window.addEventListener('resize', () => {
+         if (pageWidth >= 768) {
+          this.mobileFilterHidden = true;
+        } else {
+          this.mobileFilterHidden = false;
+        }
+      });
+    })
   }
 }
 </script>

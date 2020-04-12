@@ -20,4 +20,5 @@ export default new VueRouter({
       component: MarketPage,
     },
   ],
+  mode: `history`
 });
