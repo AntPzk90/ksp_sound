@@ -5,7 +5,10 @@
         <swiper :options="swiperOption" ref="mySwiper" class="slide-item">
           <swiper-slide v-for="(link, index) in clips" :key="index">
             <div class="iframe-wrapper">
-              <img src="img/krik-photo.jpg" width="100%" height="100%" @click="isKlipShow=!isKlipShow; changelink(link)">
+              <img src="img/krik-photo.jpg" class="iframe-wrapper__img">
+              <button class="iframe-wrapper__video-btn" @click="isKlipShow=!isKlipShow; changelink(link)">
+                <img src="img/icons/icon-play-video.svg" class="iframe-wrapper__img-video-btn">
+              </button>
             </div>
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
@@ -57,10 +60,14 @@ export default {
   },
   methods: {
     changelink(link) {
-      console.log(link)
       this.link = link
     }
-  }
+  },
+  updated() {
+    if (this.isKlipShow) {
+      this.$refs.youtube.player.playVideo();
+    }
+  },
 }
 </script>
 

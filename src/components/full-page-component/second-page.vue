@@ -6,7 +6,7 @@
         <svg class="icon">
           <use style="display:none" xlink:href="img/icons/sprite.svg#icon-mastering"></use>
         </svg>
-        <p>Сведе и мастеринг</p>
+        <p>Сведение и мастеринг</p>
       </li>
       <li class="second-page__item">
         <svg class="icon">
